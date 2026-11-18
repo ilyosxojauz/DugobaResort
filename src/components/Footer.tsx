@@ -31,9 +31,9 @@ export default function Footer() {
 
   return (
     <footer className="bg-stone-950 text-stone-400">
-      <div className="container-lux pt-20 pb-10">
-        <div className="grid lg:grid-cols-12 gap-10 lg:gap-6 pb-16 border-b border-white/10">
-          <div className="lg:col-span-5">
+      <div className="container-lux pt-12 sm:pt-16 lg:pt-20 pb-6 sm:pb-10">
+        <div className="grid grid-cols-2 lg:grid-cols-12 gap-x-5 gap-y-10 lg:gap-6 pb-10 sm:pb-16 border-b border-white/10">
+          <div className="col-span-2 lg:col-span-5">
             <span className="index-tag text-clay-500">{t('footer.colophonLabel')}</span>
             <p className="mt-5 font-serif text-2xl sm:text-3xl italic text-white leading-snug max-w-md">
               {t('footer.description')}
@@ -55,7 +55,7 @@ export default function Footer() {
             </div>
           ))}
 
-          <div className="lg:col-span-3">
+          <div className="col-span-2 lg:col-span-3">
             <h2 className="text-[11px] font-bold tracking-[0.25em] uppercase text-stone-500 mb-5">{t('footer.contact')}</h2>
             <ul className="space-y-3">
               <li>
@@ -93,8 +93,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col-reverse sm:flex-row items-start sm:items-end justify-between gap-8 pt-10">
-          <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-stone-500">
+        <div className="flex flex-col sm:flex-row items-start sm:items-end justify-between gap-6 sm:gap-8 pt-8 sm:pt-10">
+          <div className="flex flex-wrap items-center gap-x-4 sm:gap-x-6 gap-y-2 text-xs leading-5 text-stone-500">
             <span>© {new Date().getFullYear()} {t('footer.copyright')}</span>
             <Link to="/maxfiylik-siyosati" className="hover:text-sand-300 transition-colors">
               {t('cookieConsent.privacyLink')}
